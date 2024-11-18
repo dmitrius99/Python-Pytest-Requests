@@ -1,7 +1,7 @@
 import requests
 
 URL = 'https://api.pokemonbattle.ru/'
-header = {'trainer_token' : '6442ca1e9d6c1005367ea1a6f8a01e4a', 'Content-Type' : 'application/json'}
+header = {'trainer_token' : 'USER_TOKEN', 'Content-Type' : 'application/json'}
 
 body_creation = {
     "name": "generate",         #Тут прописываем имя для нового покемона
