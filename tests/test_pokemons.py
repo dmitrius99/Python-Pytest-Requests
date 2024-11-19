@@ -9,5 +9,5 @@ def test_status_code200():
     assert response.status_code == 200
 
 def test_name_trainer():
-    response_name = response = requests.get(url = f'{URL}v2/trainers?trainer_id={trainer_id}')
+    response_name = requests.get(url = f'{URL}v2/trainers?trainer_id={trainer_id}')
     assert response_name.json()["data"][0]["trainer_name"] == 'Тренер Рик'
